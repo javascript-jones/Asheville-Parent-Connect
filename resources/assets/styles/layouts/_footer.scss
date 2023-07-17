@@ -1,7 +1,7 @@
 footer {
   height: 300px;
   z-index: 25;
-  background-color: $purp;
+  background-color: $grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ footer {
   }
 
   .footer-upper {
-    color: $cream;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +202,7 @@ footer {
       letter-spacing: 0.06rem;
 
       a {
-        color: $cream;
+        color: #fff;
 
         &:hover {
           text-decoration: none;

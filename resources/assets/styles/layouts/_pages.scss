@@ -710,10 +710,10 @@ body.search {
 
   @media (min-width: 992px) {
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-2px);
 
       &.ease {
-        bottom: 115px;
+        bottom: 155px;
       }
     }
   }

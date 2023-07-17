@@ -1,9 +1,11 @@
-body {
-  overflow-x: hidden !important;
+#wpadminbar {
+  display: none !important;
+}
 
-  #wpadminbar {
-    display: none;
-  }
+body {
+  // negative mt to offset hidden admin bar
+  margin-top: -32px;
+  overflow-x: hidden !important;
 }
 
 h1,
