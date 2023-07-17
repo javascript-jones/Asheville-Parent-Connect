@@ -60,14 +60,6 @@
       </a>
     </div>
   </section>
-  <section class="message-from-asrael">
-    <h4>
-      <?php echo $message_heading; ?> <br>
-    </h4>
-    <div class="fit-this message-video">
-      <iframe src="<?php echo $new_video_url ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>
   <section class="membership-levels" id="package-option" style="background: url(<?php echo $packages_section_background['url'];?>) center center repeat-y;">
     <h4>
       <?php echo $packages_section_heading; ?>

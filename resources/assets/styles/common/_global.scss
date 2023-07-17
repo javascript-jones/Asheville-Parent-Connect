@@ -1,5 +1,9 @@
 body {
   overflow-x: hidden !important;
+
+  #wpadminbar {
+    display: none;
+  }
 }
 
 h1,

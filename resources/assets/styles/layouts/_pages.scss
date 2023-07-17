@@ -276,15 +276,6 @@ section.faq-section {
     }
   }
 
-  section.message-from-asrael {
-    height: 550px;
-
-    .message-video {
-      height: 72%;
-      width: 60%;
-    }
-  }
-
   section.quiz-section {
     .quiz-section-inner {
       h4 {
@@ -380,15 +371,6 @@ section.faq-section {
     height: 625px;
 
     .intro-inner {
-      width: 90%;
-    }
-  }
-
-  section.message-from-asrael {
-    height: 350px;
-
-    .message-video {
-      height: 72%;
       width: 90%;
     }
   }
@@ -543,27 +525,6 @@ section.community-intro {
 
     p {
       margin: 18px 0 18px 0;
-    }
-  }
-}
-
-section.message-from-asrael {
-  background-color: $purp;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-  h4 {
-    color: $yellow;
-  }
-
-  .message-video {
-    margin-bottom: 18px;
-
-    iframe {
-      height: 100%;
-      width: 100%;
     }
   }
 }

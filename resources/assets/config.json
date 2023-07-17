@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/asrael",
-  "devUrl": "https://asrael.local",
+  "publicPath": "/wp-content/themes/avlparentconnect",
+  "devUrl": "https://ashevilleparentconnect.local/",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

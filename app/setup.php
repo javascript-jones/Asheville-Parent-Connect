@@ -145,17 +145,6 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
-/**
- * Example usage for learndash-register-modal-text-after action.
- */
-add_action(
-    'learndash-register-modal-text-after',
-    function() {
- 
-        echo '<div style="font-style:italic;font-size:10px;">By registering, you are agreeing to the <a style="color:white;text-decoration:underline;" href="https://asrael.love/wp-content/uploads/2021/09/Health-Liability-Waiver-.pdf" target="_blank">Health and Liability Waiver</a></div>';
-    }
-);
-
 
 define ( 'BP_AVATAR_THUMB_WIDTH', 150 );
 define ( 'BP_AVATAR_THUMB_HEIGHT', 150 );
