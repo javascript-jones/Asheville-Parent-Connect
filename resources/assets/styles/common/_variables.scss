@@ -1,0 +1,24 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GunamGothic&display=swap");
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+/** Theme Colors **/
+$purp: #7d75f7;
+$blue: #62d1cc;
+$yellow: #eab31f;
+$cream: #e3d7cc;
+$white: #eeeff4;
+$grey: #5f6064;
+
+/** Theme Fonts **/
+$raleway: "GunamGothic", sans-serif;
+$arima: "Happy Monkey", cursive;

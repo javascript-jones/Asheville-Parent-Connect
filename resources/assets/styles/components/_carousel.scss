@@ -1,0 +1,45 @@
+.carosuel,
+.slide {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .carousel-inner {
+    height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
+
+    .carousel-item {
+      height: 100%;
+      max-height: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    border-radius: 100%;
+    background-color: $blue;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}

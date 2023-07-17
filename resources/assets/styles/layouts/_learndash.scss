@@ -1,0 +1,97 @@
+body.learndash-cpt {
+  header {
+    .entry-title {
+      text-align: center;
+    }
+  }
+
+  time.updated {
+    display: none;
+  }
+}
+
+.ld-course-list-items .ld_course_grid .thumbnail.course a.btn-primary {
+  @extend button;
+}
+
+#ld-user-register {
+  input[type="submit"] {
+    border: 1px solid $white !important;
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+.learndash-wrapper .ld-login-modal input[type=submit]:hover {
+  color: $white !important;
+}
+
+.learndash-wrapper .ld-login-modal .ld-forgot-password-link {
+  font-family: $raleway;
+}
+
+body.learndash-cpt-groups {
+  main {
+    min-height: 63vh;
+  }
+
+  .other-posts {
+    display: none;
+  }
+}
+
+.learndash-wrapper #btn-join:hover,
+.learndash-wrapper .btn-join:hover {
+  color: $blue !important;
+  background-color: $white !important;
+  opacity: 1;
+}
+
+.learndash-wrapper {
+  .ld-modal {
+    top: 12%;
+  }
+}
+
+.ld-course-list-items .ld_course_grid .thumbnail.course img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.learndash-wrapper #learndash_mark_complete_button,
+.learndash-wrapper .learndash_mark_complete_button {
+  margin: 0 !important;
+  border-radius: 20px !important;
+  color: #fff;
+  box-shadow: none !important;
+  text-transform: none !important;
+  font-family: inherit !important;
+  font-weight: 800 !important;
+  font-size: 0.75em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  max-width: 385px !important;
+  white-space: normal !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: auto !important;
+  line-height: 1.25em !important;
+  background-color: #4a932d !important;
+  padding: 1em 3em 1em 1em !important;
+
+  &:hover {
+    border: none !important;
+    background-color: #4a932d !important;
+    opacity: 0.75 !important;
+    color: white !important;
+  }
+}

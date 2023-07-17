@@ -1,0 +1,258 @@
+body.blog .post,
+body.archive .exclusive-content {
+  padding-top: 18px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 600px;
+  height: fit-content;
+  position: relative;
+  max-width: 1318px;
+  margin: 0 auto;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+
+    .picture-portion {
+      width: 61.8%;
+      display: flex;
+      flex-direction: column;
+      min-height: 500px;
+
+      .picture-inner {
+        height: 100%;
+        width: 100%;
+        background-size: cover !important;
+      }
+
+      img {
+        height: 100%;
+        max-height: 500px;
+        max-width: 90%;
+        object-fit: cover;
+        overflow: hidden;
+        // max-height: 500px;
+      }
+    }
+
+    .content-portion {
+      width: 38.2%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      &.right {
+        align-items: flex-end;
+      }
+
+      &.left {
+        align-items: flex-start;
+      }
+
+      .content-inner {
+        width: 85.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .post-title {
+          padding-top: 0.001px;
+          min-height: 38.2%;
+          max-height: fit-content;
+          width: 85.5%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h2 {
+            font-size: 45px;
+            max-height: fit-content;
+
+            a {
+              text-decoration: none;
+              color: $blue;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .entry-summary a {
+          width: 138px;
+        }
+      }
+    }
+  }
+
+  .entry-summary {
+    width: 350px;
+    // height: 61.8%;
+
+    a {
+      @extend button;
+
+      margin-top: 32px !important;
+      text-align: center;
+      display: block !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    .post {
+      height: 800px;
+
+      &.reverse-it {
+        flex-direction: column-reverse;
+      }
+
+      .picture-portion {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 350px;
+
+        .picture-inner {
+          height: 100%;
+          width: 100%;
+          background-size: cover !important;
+        }
+      }
+
+      .content-portion {
+        width: 100%;
+
+        h2 {
+          font-size: 28px;
+        }
+
+        .entry-summary {
+          width: 100% !important;
+
+          a {
+            width: 100%;
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-single {
+    max-width: 92% !important;
+
+    .entry-content {
+      max-width: 100% !important;
+      overflow: clip;
+    }
+  }
+}
+
+.blog-single {
+  margin: 0 auto;
+  max-width: 1050px;
+
+  .entry-title {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+
+  header {
+    margin-bottom: 12px;
+  }
+
+  time.updated {
+    font-size: 20px;
+    font-family: $raleway;
+    color: $blue;
+    margin-left: 2px;
+  }
+
+  .wp-post-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .entry-content {
+    margin-top: 18px;
+  }
+}
+
+.other-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 0;
+
+  .next-post {
+    text-align: right;
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-family: $raleway;
+    color: $blue;
+
+    > a {
+      width: auto;
+      color: $blue;
+
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .previous-post {
+      a {
+        margin-left: 3px;
+      }
+    }
+
+    .next-post {
+      text-align: left;
+      padding-top: 10px;
+    }
+  }
+}
+
+.exclusive-content-logged-out {
+  padding-bottom: 54px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  font-family: $raleway;
+  padding-bottom: 9px;
+  font-size: 18px;
+
+  .nav-previous {
+    &::before {
+      color: $blue;
+      content: " <- ";
+    }
+  }
+
+  .nav-next {
+    &::after {
+      color: $blue;
+      content: " -> ";
+    }
+  }
+}

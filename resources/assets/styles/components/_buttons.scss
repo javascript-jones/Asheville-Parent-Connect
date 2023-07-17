@@ -1,0 +1,80 @@
+button {
+  font-size: 1.15rem !important;
+  margin: 0 !important;
+  letter-spacing: 0.1rem !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  position: relative !important;
+  text-decoration: none !important;
+  overflow: visible !important;
+  padding: 0.7rem !important;
+  font-weight: 400 !important;
+  border-radius: 1px !important;
+  left: auto !important;
+  color: $white !important;
+  background-color: $blue !important;
+  border: 1.25px solid $blue !important;
+  display: inline-block !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  transition: 0.4s !important;
+  -webkit-appearance: none !important;
+
+  a {
+    text-decoration: none !important;
+    color: $white !important;
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    &:hover {
+      background-color: $white !important;
+      text-decoration: none !important;
+      background-image: none !important;
+      color: $blue;
+      -webkit-appearance: none !important;
+    }
+  }
+
+  &:hover {
+    background-color: $white !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: 1.25px solid $blue !important;
+    color: $blue !important;
+    -webkit-appearance: none !important;
+  }
+}
+
+.wp-block-button__link,
+.is-style-fill .wp-block-button__link {
+  @extend button;
+
+  // color: $white !important;
+
+  &:hover {
+    color: $blue !important;
+  }
+}
+
+.is-style-outline .wp-block-button__link {
+  @extend button;
+
+  color: $blue !important;
+  border: 1.25px solid $blue;
+
+  &:hover {
+    color: $white !important;
+    background-color: $blue;
+  }
+}
+
+.generic-button a {
+  @extend button;
+}
+
+input[type="submit"],
+input[type="button"] {
+  @extend button;
+}

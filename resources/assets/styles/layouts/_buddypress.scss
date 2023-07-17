@@ -1,0 +1,277 @@
+
+.generic-button {
+  a.unfav {
+    &::before {
+      color: $white !important;
+    }
+
+    span {
+      color: $white !important;
+    }
+
+    &:hover {
+      &::before {
+        color: $blue !important;
+      }
+
+      span {
+        color: $blue !important;
+      }
+    }
+  }
+}
+
+.bp-single-message-content {
+  margin-left: 6px;
+}
+
+#message_content {
+  border: 1px solid #d5d4d4 !important;
+  padding: 3px !important;
+}
+
+.buddypress-wrap .subnav-filters.bp-messages-filters ul {
+  padding-inline-start: 0 !important;
+}
+
+#user_messages_search_form,
+.bp-search.messages-search {
+  border: 1px solid #d5d4d4;
+}
+
+form.ac-form .ac-reply-content .ac-textarea {
+  padding: 0;
+}
+
+.bp-generic-meta .members-meta .action {
+  .generic-button {
+    margin-bottom: 6px;
+  }
+}
+
+nav.activity-type-navs {
+  display: none;
+}
+
+.subnav-filters {
+  ul {
+    padding-inline-start: 0;
+  }
+}
+
+form.bp-dir-search-form {
+  border: 1px solid #d5d4d4 !important;
+}
+
+input#dir-activity-search,
+input#user_messages_search,
+input#group-activity-search {
+  height: 52px;
+  background-color: white;
+}
+
+.activity-form {
+  background-color: white;
+
+  .medium-editor-toolbar {
+    display: none !important;
+  }
+
+  #whats-new-attachments,
+  #whats-new-toolbar {
+    padding: 0 !important;
+  }
+}
+
+.thread-item {
+  border: 1px solid #d5d4d4 !important;
+}
+
+.bp-messages-content {
+  margin-top: 40px;
+  padding: 40px;
+
+  .message-box {
+    border: 1px solid #d5d4d4;
+
+    .avatar-box {
+      padding: 20px !important;
+    }
+  }
+
+  #whats-new-messages-toolbar {
+    padding: 0 !important;
+  }
+
+  #message-form-submit-wrapper,
+  #message-reply-form-submit-wrapper {
+    justify-content: flex-start !important;
+  }
+
+  .medium-editor-toolbar {
+    display: none;
+  }
+
+  #bp-message-content {
+    margin-top: 40px;
+    // padding: 0;
+
+    #whats-new-messages-toolbar {
+      width: 0;
+    }
+  }
+
+  .medium-editor-element {
+    min-height: 60px;
+  }
+}
+
+#send_message_form .select2-selection__rendered {
+  list-style-type: none;
+  height: 40px;
+  padding-left: 20px !important;
+  margin-top: -27px;
+
+  li {
+    margin-left: 0;
+  }
+}
+
+.bb-select-dropdown li.select2-results__option.select2-results__message {
+  list-style: none;
+  margin-top: -14px;
+}
+
+ul.select2-results__options {
+  padding-inline-start: 18px;
+  margin-top: -14px;
+  list-style-type: none;
+  color: $blue;
+
+  li {
+    margin-left: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+input.select2-search__field {
+  border: 1px solid #d5d4d4 !important;
+  margin-left: 20px !important;
+}
+
+.bb-select-dropdown.select2-dropdown {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+select.send-to-input {
+  display: none;
+}
+
+.bp-messages-form-header {
+  margin-left: 20px;
+}
+
+#show-toolbar-button {
+  display: none;
+}
+
+.bb-activity-media-elem.media-activity {
+  flex: auto !important;
+}
+
+.buddypress {
+  .buddypress-wrap {
+    div.dropzone.dz-started .dz-default.dz-message .dz-button {
+      padding: 10px 4px 10px 4px !important;
+    }
+  }
+}
+
+.bb-activity-media-elem .entry-img img {
+  height: fit-content;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bb-media-section figure img {
+  width: 100%;
+}
+
+.bp-generic-meta {
+  min-height: 90px;
+  background: transparent !important;
+}
+
+.bp-navs {
+  background-color: white;
+}
+
+.bp-wrap .profile {
+  background-color: white;
+  padding: 6px;
+}
+
+.emojionearea .emojionearea-button {
+  margin-left: 9px;
+}
+
+#whats-new-messages-toolbar {
+  align-items: flex-start;
+
+  .post-elements-buttons-item {
+    margin-right: 0;
+    margin-top: -12px;
+  }
+}
+
+.buddypress-wrap .standard-form div.submit input {
+  margin-top: 12px !important;
+}
+
+#whats-new-post-in-box-items {
+  .bp-activity-object {
+    .bp-item-name {
+      margin-right: 6px;
+    }
+
+    button.bp-remove-item {
+      padding: 0 !important;
+    }
+  }
+}
+
+.groups-header .desc-wrap .group-description {
+  text-align: center;
+}
+
+#item-header-avatar img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media screen and (min-width: 46.8em) {
+  .activity-list .activity-item div.item-avatar img {
+    max-width: 50px;
+    height: auto;
+  }
+}
+
+.activity-list .activity-item div.item-avatar img {
+  max-width: 50px;
+  height: auto;
+}
+
+.activity-update-form #whats-new-avatar img,
+.bp-nouveau-activity-form-placeholder- #whats-new-avatar img {
+  height: 50px;
+  width: auto;
+}
+
+#bp-message-thread-list img.avatar {
+  height: 50px !important;
+  width: 50px !important;
+}

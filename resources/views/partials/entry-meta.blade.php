@@ -1,0 +1,1 @@
+<time class="updated" datetime="{{ get_post_time('c', true) }}">Published on: {{ get_the_date() }}</time>

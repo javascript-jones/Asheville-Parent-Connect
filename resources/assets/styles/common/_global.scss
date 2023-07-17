@@ -1,0 +1,315 @@
+body {
+  overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $arima;
+  color: $blue;
+  font-style: normal;
+
+  a {
+    color: $blue;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+p,
+ul,
+li,
+cite,
+button,
+time {
+  font-family: $raleway;
+}
+
+ul,
+li,
+div,
+span {
+  a {
+    color: $blue;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+p {
+  font-size: 18px;
+
+  a {
+    color: $blue;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+h1 {
+  font-size: 63px;
+  margin: 27px 0 27px 0;
+}
+
+h2 {
+  font-size: 54px;
+  margin: 21px 0 21px 0;
+}
+
+h3 {
+  font-size: 45px;
+  margin: 18px 0 18px 0;
+}
+
+h4 {
+  font-size: 36px;
+  margin: 14px 0 14px 0;
+}
+
+h5 {
+  font-size: 28px;
+  margin: 10px 0 10px 0;
+}
+
+h6 {
+  font-size: 22px;
+  margin: 9px 0 9px 0;
+}
+
+.body-wrap {
+  max-width: 1100px;
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 27px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    margin: 27px 0 27px 0;
+  }
+
+  h2 {
+    font-size: 38px;
+    margin: 21px 0 21px 0;
+  }
+
+  h3 {
+    font-size: 34px;
+    margin: 18px 0 18px 0;
+  }
+
+  h4 {
+    font-size: 30px;
+    margin: 14px 0 14px 0;
+  }
+
+  h5 {
+    font-size: 27px;
+    margin: 10px 0 10px 0;
+  }
+
+  h6 {
+    font-size: 22px;
+    margin: 9px 0 9px 0;
+  }
+
+  .body-wrap {
+    max-width: 1160px;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 27px;
+  }
+}
+
+/* Blockquote
+--------------------------------------------- */
+
+blockquote,
+blockquote.wp-block-quote {
+  text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid $blue;
+
+  p {
+    font-style: normal;
+  }
+
+  cite,
+  .wp-block-quote__citation {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.wp-block-quote.is-style-large {
+  p {
+    font-size: 34px;
+    font-style: normal;
+  }
+
+  cite {
+    text-align: left;
+  }
+}
+
+/* Pull Quote
+--------------------------------------------- */
+
+.wp-block-pullquote {
+  padding: 0;
+
+  blockquote {
+    border-top: 8px;
+    border-bottom: 8px;
+    padding: 16px 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &.alignleft,
+  &.alignright {
+    blockquote {
+      max-width: 100%;
+    }
+  }
+}
+
+figure.wp-block-pullquote.is-style-solid-color {
+  max-width: 100%;
+
+  blockquote {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+}
+
+/* Image and Gallery Captions
+--------------------------------------------- */
+
+.wp-block-image {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    display: inherit !important;
+  }
+}
+
+figcaption {
+  font-family: $raleway;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #747577;
+  width: 100%;
+}
+
+.blocks-gallery-item figure {
+  justify-content: center !important;
+}
+
+.is-cropped .blocks-gallery-item img {
+  width: auto !important;
+  height: 230px !important;
+  max-width: 1000% !important;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.is-cropped .blocks-gallery-item figure {
+  overflow: hidden;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .is-cropped .blocks-gallery-item img {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 230px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    -webkit-transform: unset !important;
+    transform: unset !important;
+  }
+
+  .is-cropped .blocks-gallery-item figure {
+    overflow: unset !important;
+  }
+}
+
+.wp-block-table {
+  width: 100%;
+  margin-bottom: 45px;
+  border-left: 1px solid rgba($grey, 0.3);
+  border-right: 1px solid rgba($grey, 0.3);
+  border-bottom: 1px solid rgba($grey, 0.3);
+
+  td {
+    border-top: 1px solid rgba($grey, 0.3) !important;
+    border-bottom: 1px solid rgba($grey, 0.3);
+    padding: 5px 13px;
+  }
+
+  &.is-style-stripes {
+    border-bottom: 1px solid rgba($grey, 0.3);
+  }
+
+  &:not(.is-style-stripes) {
+    tr {
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: rgba($grey, 0.1);
+      }
+    }
+  }
+
+  figcaption {
+    padding: 5px 12px;
+  }
+}
+
+/* Video styling, depends on Fitvids and 'fit-this' class adeed to wp-block videos */
+
+.wp-block-embed {
+  iframe {
+    width: 100%;
+    height: 560px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wp-block-image {
+    .alignright,
+    .alignleft {
+      float: initial !important;
+      margin: 0 !important;
+    }
+  }
+}

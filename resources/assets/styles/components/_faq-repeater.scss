@@ -1,0 +1,36 @@
+.faq-repeater {
+  width: 100%;
+
+  .full-wide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .bi-chevron-up {
+      display: none;
+    }
+
+    h5 {
+      display: inline-block;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .full-wide.wide-open {
+    .bi-chevron-down {
+      display: none;
+    }
+
+    .bi-chevron-up {
+      display: inline-block;
+    }
+  }
+
+  hr {
+    border: 1px solid $black;
+  }
+}
