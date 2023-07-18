@@ -50,9 +50,13 @@
           <h1>
             <?php echo $big_text; ?>
           </h1>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <?php echo $call_to_action['title']; ?>
-          </button>
+          <a href="<?php echo $call_to_action['url']?>">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <?php echo $call_to_action['title']; ?>
+            </button>
+          </a>
+          <p>
+          </p>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
