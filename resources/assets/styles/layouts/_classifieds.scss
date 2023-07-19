@@ -1,0 +1,25 @@
+input.select2-search__field {
+  margin-left: 15px !important;
+  width: 98.75% !important;
+}
+
+input#awpcp-search-query-field {
+  height: 42.5px;
+}
+
+.classifiedcats {
+  #awpcpcatlayout {
+    ul.showcategoriesmainlist {
+      display: flex !important;
+      flex-direction: column;
+
+      li.columns-2 {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+.awpcp-pagination {
+  float: none;
+}

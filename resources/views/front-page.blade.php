@@ -51,7 +51,7 @@
             <?php echo $big_text; ?>
           </h1>
           <a href="<?php echo $call_to_action['url']?>">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-primary">
                 <?php echo $call_to_action['title']; ?>
             </button>
           </a>
