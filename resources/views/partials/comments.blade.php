@@ -5,12 +5,19 @@ if (post_password_required()) {
 @endphp
 
 <section id="comments" class="comments">
-  @if (have_comments())
-    <h2>
-      {!! sprintf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
-    </h2>
-
+  <h3>
+    Reviews:
+  </h3>
+  @if (get_comments_number() > 0)
     <ol class="comment-list">
+      <?php 
+          $post_id = get_the_ID();
+          $comments = get_comments( array( 'post_id' => $post_id) );
+
+          foreach ( $comments as $comment ) :
+            	echo '<h5>' . $comment->comment_author . '</h5>' . '<p>' .$comment->comment_content . '</p>';
+          endforeach;
+       ?>
       {!! wp_list_comments(['style' => 'ol', 'short_ping' => true]) !!}
     </ol>
 
